@@ -35,7 +35,7 @@
   programs.firefox.enable = true;
 
   environment.systemPackages = with pkgs; [
-    neovim
+    vim
     wget
     foot
     ghostty
