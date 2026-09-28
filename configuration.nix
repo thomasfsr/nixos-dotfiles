@@ -2,7 +2,6 @@
 
 {
   imports = [
-    inputs.mangowm.nixosModules.mango
     ./hardware-configuration.nix
   ];
 
