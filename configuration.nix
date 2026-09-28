@@ -33,7 +33,7 @@
     ];
   };
 
-  programs.firefox.enable = true;
+  programs.google-chrome.enable = true;
   programs.mango.enable = true;
 
   environment.systemPackages = with pkgs; [
