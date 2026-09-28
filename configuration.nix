@@ -2,6 +2,7 @@
 
 {
   imports = [
+    inputs.mangowm.nixosModules.mango
     ./hardware-configuration.nix
   ];
 
@@ -33,6 +34,7 @@
   };
 
   programs.firefox.enable = true;
+  programs.mango.enable = true;
 
   environment.systemPackages = with pkgs; [
     vim
@@ -53,6 +55,10 @@
     "nix-command"
     "flakes"
   ];
+
+  environment.loginShellInit = ''
+    [ "$(tty)" = /dev/tty1 ] && exec mango
+  '';
 
   system.stateVersion = "25.05";
 }
