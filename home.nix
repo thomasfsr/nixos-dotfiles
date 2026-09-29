@@ -14,7 +14,7 @@ in
   home.username = "tfsr";
   home.homeDirectory = "/home/tfsr";
   home.stateVersion = "25.05";
-  programs.bash = {
+  programs.zsh = {
     enable = true;
     shellAliases = {
       btw = "echo i use mango btw";

@@ -28,11 +28,16 @@
 
   users.users.tfsr = {
     isNormalUser = true;
+    shell = pkgs.zsh;
     extraGroups = [ "wheel" ];
     packages = with pkgs; [
       tree
     ];
   };
+
+  environment.shells = with pkgs; [
+    zsh
+  ];
 
   programs.google-chrome.enable = true;
   programs.mango.enable = true;
