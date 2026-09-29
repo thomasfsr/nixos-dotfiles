@@ -36,6 +36,7 @@
 
   programs.google-chrome.enable = true;
   programs.mango.enable = true;
+  programs.xwayland.enable = true;
 
   environment.systemPackages = with pkgs; [
     vim
