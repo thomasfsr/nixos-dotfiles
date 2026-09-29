@@ -42,6 +42,7 @@
   programs.google-chrome.enable = true;
   programs.mango.enable = true;
   programs.xwayland.enable = true;
+  programs.zsh.enable = true;
 
   environment.systemPackages = with pkgs; [
     vim
@@ -52,6 +53,7 @@
     git
     swaybg
     swayimg
+    tree-sitter
   ];
 
   fonts.packages = with pkgs; [
