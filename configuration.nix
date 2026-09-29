@@ -5,6 +5,8 @@
     ./hardware-configuration.nix
   ];
 
+  nixpkgs.config.allowUnfree = true;
+
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
@@ -54,10 +56,5 @@
     "nix-command"
     "flakes"
   ];
-
-  environment.loginShellInit = ''
-    [ "$(tty)" = /dev/tty1 ] && exec mango
-  '';
-
   system.stateVersion = "25.05";
 }

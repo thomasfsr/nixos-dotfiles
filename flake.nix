@@ -19,10 +19,8 @@
     nixosConfigurations.mango-btw = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
-        ./configuration.nix
-
         mangowm.nixosModules.mango
-
+        ./configuration.nix
         home-manager.nixosModules.home-manager
         {
           home-manager = {
