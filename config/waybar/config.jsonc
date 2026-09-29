@@ -1,0 +1,100 @@
+//-*- mode: jsonc -*-
+{
+    "layer": "top",
+    "position": "top",
+    "height": 20,
+    "spacing": 4,
+
+    // Choose the order of the modules
+    "modules-left": [
+      "custom/arch",
+      "ext/workspaces"
+    ],
+    "modules-center": [
+      "custom/date",
+      "custom/sep",
+      "clock"
+    ],
+
+    "custom/window": {
+        "exec": "mmsg watch focusing-client | jq --unbuffered -r '.title // \"\"'",
+        "return-type": "text"
+    },
+    "modules-right": [
+        "custom/brightness",
+        "custom/sep",
+        "battery",
+        "custom/sep",
+        "custom/system",
+        "custom/sep",
+        "custom/volume",
+        "custom/sep",
+        "network",
+        "custom/sep"
+    ],
+    // Modules configuration
+    "ext/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "warp-on-scroll": false,
+        "format": "{name}",
+        "on-click": "activate",
+        "persistent-workspaces": {
+            "*" : 9
+        }
+    },
+    "ext/window" : {
+        "max-length": 40,
+        "seperate-outputs": false
+    },
+    "tray": {
+        "spacing": 10
+    },
+    "clock": {
+    },
+    "custom/system": {
+        "exec": "bash ~/.config/waybar/scripts/system.sh",
+        "interval": 1,
+        "on-click": "bash ~/.config/waybar/scripts/toggle-system.sh"
+    },
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-plugged": "{capacity}%  ",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "network": {
+        "format": "󰖩 ",
+        "format-disconnected": "󰖪 ",
+        "on-click": "foot --title 'nmtui-popup' --window-size-chars 100x30 sh -c 'sleep 0.3 && nmtui'"
+    },
+    "custom/sep": {
+        "format" : " ",
+        "interval" : 0
+    },
+    "custom/brightness": {
+        "exec": "brightnessctl | grep -oP '\\(\\K[0-9]+(?=%)'",
+        "interval": 1,
+        "format": " {}%"
+    },
+    "custom/volume": {
+        "exec": "wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{if ($3==\"[MUTED]\") print \"󰸈 \"; else print \"󰕿 \"int($2*100)\"%\"}'",
+        "interval": 1,
+        "format": "{}"
+    },
+    "custom/arch": {
+        "format": "  ",
+        "on-click": "rofi -show drun",
+        "tooltip": false
+    },
+
+    "custom/date": {
+        "exec": "bash ~/.config/waybar/scripts/date_pt.sh",
+        "interval": 60,
+        "tooltip": false
+    }
+}
