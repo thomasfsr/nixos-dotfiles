@@ -47,19 +47,31 @@
   environment.systemPackages = with pkgs; [
     vim
     wget
+
+    # Terminais
     foot
     ghostty
+
+    # Wayland / desktop
     waybar
-    git
     swaybg
     swayimg
-    fcitx5
+    xorg.xrdb
+    xdg-desktop-portal-wlr
+
+    # Clipboard
     wl-clip-persist
     wl-clipboard
     cliphist
+
+    # Áudio / idle
     sway-audio-idle-inhibit
-    xorg.xrdb
-    xdg-desktop-portal-wlrtree-sitter
+
+    # Input method
+    fcitx5
+
+    # Git
+    git
   ];
 
   fonts.packages = with pkgs; [
