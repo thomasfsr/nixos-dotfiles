@@ -53,7 +53,13 @@
     git
     swaybg
     swayimg
-    tree-sitter
+    fcitx5
+    wl-clip-persist
+    wl-clipboard
+    cliphist
+    sway-audio-idle-inhibit
+    xorg.xrdb
+    xdg-desktop-portal-wlrtree-sitter
   ];
 
   fonts.packages = with pkgs; [
