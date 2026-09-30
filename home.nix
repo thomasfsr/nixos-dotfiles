@@ -22,6 +22,7 @@ in
       vi = "nvim";
     };
   };
+  programs.git.enable = true;
 
   home.packages = with pkgs; [
     neovim
