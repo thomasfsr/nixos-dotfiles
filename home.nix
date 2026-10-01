@@ -1,9 +1,4 @@
 { config, pkgs, ... }:
-{
-  imports = [
-    ./modules/p_languages.nix
-  ];
-}
 
 let
   dotfiles = "${config.home.homeDirectory}/nixos-dotfiles/config";
@@ -20,17 +15,24 @@ let
   };
 in
 {
+  imports = [
+    ./modules/p_languages.nix
+  ];
+
   home.username = "tfsr";
   home.homeDirectory = "/home/tfsr";
   home.stateVersion = "25.05";
+
   programs.zsh = {
     enable = true;
+
     shellAliases = {
       btw = "echo i use mango btw";
       nrs = "sudo nixos-rebuild switch --flake ~/nixos-dotfiles#mango-btw";
       vi = "nvim";
     };
   };
+
   programs.git.enable = true;
   programs.starship.enable = true;
 
@@ -47,5 +49,5 @@ in
       recursive = true;
     })
     configs;
-
 }
+```
