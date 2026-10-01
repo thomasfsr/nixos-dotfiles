@@ -36,6 +36,7 @@ in
     gcc
     rofi
     opencode
+    yazi
   ];
 
   xdg.configFile = builtins.mapAttrs
