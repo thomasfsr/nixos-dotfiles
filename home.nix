@@ -15,7 +15,9 @@ let
   };
 in
 {
-
+  imports = [
+    ./modules/development.nix
+    ];
   home.username = "tfsr";
   home.homeDirectory = "/home/tfsr";
   home.stateVersion = "26.05";
@@ -38,30 +40,7 @@ in
     rofi
     opencode
     yazi
-
-    ripgrep
-    fd
-    fzf
-    tree-sitter
-
-    lua-language-server
-    nil
-    nixpkgs-fmt # nix formatter
-
-    nodejs
-    bun
-    uv
-    go
-    cargo
-    zvm
   ];
-
-  programs.neovim = {
-    enable = true;
-    viAlias = true;
-    vimAlias = true;
-    sideloadInitLua = true;
-  };
 
   xdg.configFile = builtins.mapAttrs
     (name: subpath: {
