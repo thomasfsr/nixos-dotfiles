@@ -21,7 +21,7 @@ in
 
   home.username = "tfsr";
   home.homeDirectory = "/home/tfsr";
-  home.stateVersion = "25.05";
+  home.stateVersion = "26.05";
 
   programs.zsh = {
     enable = true;
