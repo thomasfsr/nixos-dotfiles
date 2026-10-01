@@ -2,7 +2,7 @@
 
 let
   dotfiles = "${config.home.homeDirectory}/nixos-dotfiles/config";
-  create_symlink = path: config.lib.file.mkOutOfStoreSymlink path;
+  symlink = config.lib.file.mkOutOfStoreSymlink;
 
   configs = {
     mango = "mango";
@@ -18,7 +18,7 @@ in
 
   home.username = "tfsr";
   home.homeDirectory = "/home/tfsr";
-  home.stateVersion = "25.05";
+  home.stateVersion = "26.05";
 
   programs.zsh = {
     enable = true;
@@ -60,12 +60,12 @@ in
     enable = true;
     viAlias = true;
     vimAlias = true;
+    sideloadInitLua = true;
   };
 
   xdg.configFile = builtins.mapAttrs
     (name: subpath: {
-      source = create_symlink "${dotfiles}/${subpath}";
-      recursive = true;
+      source = symlink "${dotfiles}/${subpath}";
     })
     configs;
 }
