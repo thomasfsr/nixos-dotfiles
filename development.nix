@@ -13,7 +13,6 @@
 
     nodejs
     bun
-    python3
     uv
     go
     cargo

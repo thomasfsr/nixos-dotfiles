@@ -16,7 +16,7 @@ let
 in
 {
   imports = [
-    ./p_languages.nix
+    ./development.nix
   ];
 
   home.username = "tfsr";
