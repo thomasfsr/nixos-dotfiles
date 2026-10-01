@@ -26,6 +26,7 @@ in
     };
   };
   programs.git.enable = true;
+  programs.starship.enable = true;
 
   home.packages = with pkgs; [
     neovim
@@ -34,6 +35,7 @@ in
     nodejs
     gcc
     rofi
+    opencode
   ];
 
   xdg.configFile = builtins.mapAttrs

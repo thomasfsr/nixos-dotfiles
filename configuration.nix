@@ -55,7 +55,7 @@
     waybar
     swaybg
     swayimg
-    xorg.xrdb
+    xrdb
     xdg-desktop-portal-wlr
 
     # Clipboard
