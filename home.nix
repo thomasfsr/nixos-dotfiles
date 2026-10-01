@@ -1,4 +1,10 @@
 { config, pkgs, ... }:
+{
+  imports = [
+    ./modules/p_languages.nix
+  ];
+}
+
 let
   dotfiles = "${config.home.homeDirectory}/nixos-dotfiles/config";
   create_symlink = path: config.lib.file.mkOutOfStoreSymlink path;
@@ -29,10 +35,6 @@ in
   programs.starship.enable = true;
 
   home.packages = with pkgs; [
-    neovim
-    ripgrep
-    nixpkgs-fmt
-    nodejs
     gcc
     rofi
     opencode
