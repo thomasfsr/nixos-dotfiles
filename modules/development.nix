@@ -17,8 +17,10 @@
     go
     cargo
     zvm
+
     laravel
     php
+    phpPackages.composer
   ];
 
   programs.neovim = {
