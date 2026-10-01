@@ -15,13 +15,10 @@ let
   };
 in
 {
-  imports = [
-    ./development.nix
-  ];
 
   home.username = "tfsr";
   home.homeDirectory = "/home/tfsr";
-  home.stateVersion = "26.05";
+  home.stateVersion = "25.05";
 
   programs.zsh = {
     enable = true;
@@ -41,7 +38,29 @@ in
     rofi
     opencode
     yazi
+
+    ripgrep
+    fd
+    fzf
+    tree-sitter
+
+    lua-language-server
+    nil
+    nixpkgs-fmt # nix formatter
+
+    nodejs
+    bun
+    uv
+    go
+    cargo
+    zvm
   ];
+
+  programs.neovim = {
+    enable = true;
+    viAlias = true;
+    vimAlias = true;
+  };
 
   xdg.configFile = builtins.mapAttrs
     (name: subpath: {
