@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
 set +e
 # some env can't auto run the portal, so need this
 /usr/lib/xdg-desktop-portal-wlr  >/dev/null 2>&1 &

@@ -14,11 +14,8 @@
   networking.networkmanager.enable = true;
 
   time.timeZone = "America/Sao_Paulo";
-
-  # Teclado brasileiro ABNT2 no console
   console.keyMap = "br-abnt2";
 
-  # Teclado brasileiro ABNT2 no ambiente gráfico
   services.xserver.xkb = {
     layout = "br";
     variant = "abnt2";
@@ -43,8 +40,10 @@
   programs.mango.enable = true;
   programs.xwayland.enable = true;
   programs.zsh.enable = true;
+  programs.bash.enable = true;
 
   environment.systemPackages = with pkgs; [
+    brightnessctl
     vim
     wget
 

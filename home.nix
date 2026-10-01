@@ -8,6 +8,9 @@ let
     nvim = "nvim";
     foot = "foot";
     waybar = "waybar";
+    ghostty = "ghostty";
+    yazi = "yazi";
+    swaylock = "swaylock";
   };
 in
 {
