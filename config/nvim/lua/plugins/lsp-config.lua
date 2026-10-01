@@ -2,6 +2,9 @@ return {
 	{
 		"williamboman/mason.nvim",
 		lazy = false,
+		dependencies = {
+			"stevearc/dressing.nvim",
+		},
 		config = function()
 			require("mason").setup()
 		end,
