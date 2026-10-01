@@ -18,6 +18,7 @@
     cargo
     zvm
     laravel
+    php
   ];
 
   programs.neovim = {
