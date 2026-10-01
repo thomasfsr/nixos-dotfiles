@@ -17,6 +17,7 @@
     go
     cargo
     zvm
+    laravel
   ];
 
   programs.neovim = {
