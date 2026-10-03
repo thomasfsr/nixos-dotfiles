@@ -40,6 +40,7 @@ in
     rofi
     opencode
     yazi
+    psmisc
   ];
 
   xdg.configFile = builtins.mapAttrs
