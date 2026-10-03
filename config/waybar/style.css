@@ -17,7 +17,7 @@
 
 window#waybar {
   min-height: 20px;
-  background: rgba(10, 10, 10, 0.8);
+  background: rgba(10, 10, 10, 0);
   color: #ffffff;
 }
 
