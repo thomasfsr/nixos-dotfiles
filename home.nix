@@ -41,6 +41,8 @@ in
     opencode
     yazi
     psmisc
+    antigravity-ide
+    antigravity-cli
   ];
 
   xdg.configFile = builtins.mapAttrs
