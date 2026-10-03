@@ -4,6 +4,7 @@
     "position": "bottom",
     "height": 20,
     "spacing": 4,
+    "margin": 3,
 
     // Choose the order of the modules
     "modules-left": [

@@ -54,6 +54,7 @@
     # Wayland / desktop
     waybar
     swaybg
+    swaylock
     swayimg
     xrdb
     xdg-desktop-portal-wlr
