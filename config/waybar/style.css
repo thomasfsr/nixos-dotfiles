@@ -17,7 +17,7 @@ window#waybar {
   min-height: 14px;
   background: rgba(15, 15, 15, 0.4);
   color: #ffffff;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   border: 2px rgba(15, 15, 15, 0.5);
 }
 

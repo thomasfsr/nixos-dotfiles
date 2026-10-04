@@ -75,6 +75,7 @@
 
   fonts.packages = with pkgs; [
     nerd-fonts.departure-mono
+    nerd-fonts.iosevka-mono
   ];
 
   nix.settings.experimental-features = [
