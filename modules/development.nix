@@ -17,6 +17,7 @@
     go
     cargo
     zvm
+    python3
 
     laravel
     php
