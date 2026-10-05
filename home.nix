@@ -33,7 +33,7 @@ in
 
     sessionVariables = {
       PATH = "$HOME/.config/herd-lite/bin:$PATH";
-    }
+    };
   };
 
   programs.git.enable = true;
