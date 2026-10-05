@@ -30,6 +30,10 @@ in
       nrs = "sudo nixos-rebuild switch --flake ~/nixos-dotfiles#mango-btw";
       vi = "nvim";
     };
+
+    sessionVariables = {
+      PATH = "$HOME/.config/herd-lite/bin:$PATH";
+    }
   };
 
   programs.git.enable = true;
