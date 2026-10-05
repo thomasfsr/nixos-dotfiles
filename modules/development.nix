@@ -18,10 +18,6 @@
     cargo
     zvm
     python3
-
-    laravel
-    php
-    phpPackages.composer
   ];
 
   programs.neovim = {
