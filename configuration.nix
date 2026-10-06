@@ -74,8 +74,7 @@
   ];
 
   fonts.packages = with pkgs; [
-    nerd-fonts.departure-mono
-    nerd-fonts.iosevka-term-slab
+    nerd-fonts.jetbrains-mono
   ];
 
   nix.settings.experimental-features = [
