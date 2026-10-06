@@ -1,4 +1,4 @@
-image=~/nixos-dotfiles/config/mango/wallpaper/tot2.png
+image=/home/tfsr/nixos-dotfiles/config/mango/wallpaper/tot2.png
 scaling=center
 effect-blur=7x5
 

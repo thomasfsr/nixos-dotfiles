@@ -71,6 +71,8 @@
 
     # Git
     git
+
+    #others
   ];
 
   fonts.packages = with pkgs; [

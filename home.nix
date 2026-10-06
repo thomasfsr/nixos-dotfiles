@@ -47,6 +47,8 @@ in
     psmisc
     antigravity-ide
     antigravity-cli
+    onlyoffice-desktopeditors
+    htop
   ];
 
   xdg.configFile = builtins.mapAttrs
