@@ -5,6 +5,11 @@
     ./hardware-configuration.nix
   ];
 
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";"
+    options = "--delete-older-than 7d";
+  };
   nixpkgs.config.allowUnfree = true;
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
