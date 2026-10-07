@@ -49,6 +49,7 @@ in
     antigravity-cli
     onlyoffice-desktopeditors
     htop
+    imagemagick
   ];
 
   xdg.configFile = builtins.mapAttrs

@@ -23,6 +23,6 @@ wl-paste --type text --watch cliphist store >/dev/null 2>&1 &
 # inhibit by audio
 sway-audio-idle-inhibit >/dev/null 2>&1 &
 
-swaybg -i ~/.config/mango/wallpaper/tot2.png -m fill >/dev/null 2>&1 &
+swaybg -i ~/.config/mango/wallpaper/vaio.png -m fill >/dev/null 2>&1 &
 
 waybar -c ~/.config/waybar/config.jsonc -s ~/.config/waybar/style.css >/dev/null 2>&1 &
