@@ -49,7 +49,6 @@ in
     antigravity-cli
     onlyoffice-desktopeditors
     htop
-    magick
   ];
 
   xdg.configFile = builtins.mapAttrs
