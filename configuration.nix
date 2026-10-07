@@ -7,7 +7,7 @@
 
   nix.gc = {
     automatic = true;
-    dates = "weekly";"
+    dates = "weekly";
     options = "--delete-older-than 5d";
   };
   nixpkgs.config.allowUnfree = true;
