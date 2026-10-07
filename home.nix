@@ -50,6 +50,7 @@ in
     onlyoffice-desktopeditors
     htop
     imagemagick
+    vscode
   ];
 
   xdg.configFile = builtins.mapAttrs
