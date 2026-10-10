@@ -51,6 +51,7 @@ in
     htop
     imagemagick
     vscode
+    github-cli
   ];
 
   xdg.configFile = builtins.mapAttrs
