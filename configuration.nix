@@ -59,6 +59,7 @@
     waybar
     swaybg
     swaylock
+    swaylock-effects
     swayimg
     xrdb
     xdg-desktop-portal-wlr
