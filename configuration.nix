@@ -5,6 +5,7 @@
     ./hardware-configuration.nix
   ];
 
+  security.pam.services.swaylock = {};
   nix.gc = {
     automatic = true;
     dates = "weekly";
@@ -45,7 +46,6 @@
   programs.xwayland.enable = true;
   programs.zsh.enable = true;
   programs.bash.enable = true;
-  programs.swaylock.enable = true;
 
   environment.systemPackages = with pkgs; [
     brightnessctl
