@@ -31,11 +31,13 @@
   users.users.tfsr = {
     isNormalUser = true;
     shell = pkgs.zsh;
-    extraGroups = [ "wheel" ];
+    extraGroups = [ "wheel" "docker"];
     packages = with pkgs; [
       tree
     ];
   };
+
+  virtualisation.docker.enable = true;
 
   environment.shells = with pkgs; [
     zsh
@@ -79,7 +81,8 @@
     # Git
     git
 
-    #others
+    # Docker
+    docker-compose
   ];
 
   fonts.packages = with pkgs; [
