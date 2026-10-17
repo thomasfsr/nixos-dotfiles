@@ -84,7 +84,7 @@
     },
     "custom/volume": {
         "exec": "wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{if ($3==\"[MUTED]\") print \"󰸈 \"; else print \"󰕿 \"int($2*100)\"%\"}'",
-        "interval": 1,
+        "signal": 9,
         "format": "{}"
     },
     "custom/arch": {
