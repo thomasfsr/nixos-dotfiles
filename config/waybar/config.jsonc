@@ -78,7 +78,7 @@
         "interval" : 0
     },
     "custom/brightness": {
-        "exec": "brightnessctl | grep -oP '\\(\\K[0-9]+(?=%)'",
+        "exec": "brightnessctl -m | cut -d, -f4 | tr -d '%'",
         "signal": 8,
         "format": " {}%"
     },
