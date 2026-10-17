@@ -79,7 +79,7 @@
     },
     "custom/brightness": {
         "exec": "brightnessctl | grep -oP '\\(\\K[0-9]+(?=%)'",
-        "interval": 1,
+        "signal": 8,
         "format": " {}%"
     },
     "custom/volume": {
