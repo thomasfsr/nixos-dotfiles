@@ -1,13 +1,19 @@
 [opener]
 chrome = [
-    { run = 'google-chrome-stable "$@"', orphan = true, desc = "Google Chrome" }
+    { run = 'google-chrome-stable %s', orphan = true, desc = "Google Chrome" }
 ]
+
 imagem = [
-    { run = 'swayimg "$@"', block = true, desc = "Abrir com Swayimg" }
+    { run = 'swayimg %s', block = true, desc = "Abrir com Swayimg" }
+]
+
+edit = [
+    { run = 'nvim %s', block = true, desc = "Editar com Neovim" }
 ]
 
 [open]
 rules = [
     { mime = "application/pdf", use = "chrome" },
-    { mime = "image/*", use = "imagem" }
+    { mime = "image/*", use = "imagem" },
+    { mime = "text/*", use = "edit" }
 ]
