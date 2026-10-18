@@ -29,6 +29,7 @@ in
       btw = "echo i use mango btw";
       nrs = "sudo nixos-rebuild switch --flake ~/nixos-dotfiles#mango-btw";
       vi = "nvim";
+      gac = "git add . && git commit -m 'ok' && git push";
     };
 
     sessionVariables = {
