@@ -9,29 +9,23 @@ return {
 	-- 		vim.cmd.colorscheme("tokyonight-night")
 	-- 	end,
 	-- },
-	{
-		"catppuccin/nvim",
-		name = "catppuccin",
-		priority = 1000,
-		config = function()
-			vim.cmd.colorscheme("catppuccin-mocha")
-		end,
-	},
-
-	-- { "Mofiqul/dracula.nvim" },
 	-- {
-	-- 	"neanias/everforest-nvim",
+	-- 	"catppuccin/nvim",
+	-- 	name = "catppuccin",
 	-- 	priority = 1000,
 	-- 	config = function()
-	-- 		require("everforest").setup({
-	-- 			background = "hard",
-	-- 			italics = true,
-	-- 			ui_contrast = "high",
-	-- 			-- transparent_background_level = 0.5,
-	-- 		})
-	-- 		-- vim.cmd("colorscheme everforest")
+	-- 		vim.cmd.colorscheme("catppuccin-mocha")
 	-- 	end,
 	-- },
+
+	{ "Mofiqul/dracula.nvim",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require("dracula").setup()
+      vim.cmd.colorscheme("dracula")
+    end,
+},
 	-- {
 	-- 	"loctvl842/monokai-pro.nvim",
 	-- 	lazy = false,

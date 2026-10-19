@@ -83,6 +83,8 @@
 
     # Docker
     docker-compose
+
+    unzip
   ];
 
   fonts.packages = with pkgs; [
