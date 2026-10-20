@@ -17,7 +17,7 @@ in
 {
   imports = [
     ./modules/development.nix
-    ];
+  ];
   home.username = "tfsr";
   home.homeDirectory = "/home/tfsr";
   home.stateVersion = "26.05";
@@ -34,13 +34,13 @@ in
 
     sessionVariables = {
       PATH = "$HOME/.config/herd-lite/bin:$PATH";
+    };
 
-    initExtra = ''
+    initContent = ''
       if [[ -z "$WAYLAND_DISPLAY" && "$(tty)" == /dev/tty1 ]]; then
         exec mango
       fi
     '';
-    };
   };
 
   programs.git.enable = true;
@@ -61,9 +61,7 @@ in
     github-cli
   ];
 
-  xdg.configFile = builtins.mapAttrs
-    (name: subpath: {
-      source = symlink "${dotfiles}/${subpath}";
-    })
-    configs;
+  xdg.configFile = builtins.mapAttrs (name: subpath: {
+    source = symlink "${dotfiles}/${subpath}";
+  }) configs;
 }
