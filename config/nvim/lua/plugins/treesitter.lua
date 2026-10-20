@@ -40,6 +40,7 @@ return {
 			"vimdoc",
 			"toml",
 			"xml",
+      "nix",
 		})
 		vim.api.nvim_create_autocmd("FileType", {
 			pattern = "blade",

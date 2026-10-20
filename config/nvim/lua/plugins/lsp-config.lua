@@ -6,7 +6,9 @@ return {
 			"stevearc/dressing.nvim",
 		},
 		config = function()
-			require("mason").setup()
+			require("mason").setup({
+            PATH = "append",
+      })
 		end,
 	},
 	{
