@@ -10,6 +10,7 @@
     lua-language-server
     nil
     nixpkgs-fmt # nix formatter
+    nixfmt
 
     nodejs
     bun

@@ -16,6 +16,7 @@ return {
 				zig = { "zigfmt" },
 				c = { "clang_format" },
 				blade = { "blade-formatter" },
+        nix = { "nixfmt" },
 			},
 			format_on_save = {
 				timeout_ms = 1000,

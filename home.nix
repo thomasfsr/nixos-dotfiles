@@ -34,6 +34,12 @@ in
 
     sessionVariables = {
       PATH = "$HOME/.config/herd-lite/bin:$PATH";
+
+    initExtra = ''
+      if [[ -z "$WAYLAND_DISPLAY" && "$(tty)" == /dev/tty1 ]]; then
+        exec mango
+      fi
+    '';
     };
   };
 
