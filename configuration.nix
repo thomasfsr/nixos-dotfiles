@@ -17,6 +17,7 @@
 
   networking.hostName = "mango-btw";
   networking.networkmanager.enable = true;
+  networking.firewall.allowedTCPPorts = [ 8000 ];
 
   time.timeZone = "America/Sao_Paulo";
   console.keyMap = "br-abnt2";
