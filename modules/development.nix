@@ -11,13 +11,25 @@
     fd
     fzf
     tree-sitter
-
+    #LSP
     lua-language-server
     stylua
     nil
-    nixpkgs-fmt # nix formatter
     nixfmt
+    pyright
+    gopls
+    typescript-language-server
+    vscode-langservers-extracted
+    bash-language-server
 
+    # Formatters / linters
+    prettier
+    black
+    isort
+    shfmt
+    shellcheck
+
+    #Languages
     nodejs
     bun
     uv
