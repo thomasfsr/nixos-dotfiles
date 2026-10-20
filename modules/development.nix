@@ -11,6 +11,7 @@
     fd
     fzf
     tree-sitter
+
     #LSP
     lua-language-server
     stylua
@@ -21,6 +22,9 @@
     typescript-language-server
     vscode-langservers-extracted
     bash-language-server
+    intelephense
+    vue-language-server
+    tailwindcss-language-server
 
     # Formatters / linters
     prettier
@@ -28,6 +32,7 @@
     isort
     shfmt
     shellcheck
+    eslint_d
 
     #Languages
     nodejs
