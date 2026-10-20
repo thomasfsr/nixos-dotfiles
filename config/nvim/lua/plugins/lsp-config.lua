@@ -16,7 +16,6 @@ return {
 		lazy = false,
 		opts = {
 			ensure_installed = {
-				"lua_ls",
 				"pyright",
 				"gopls",
 				"ts_ls",
@@ -41,7 +40,6 @@ return {
 		opts = {
 			ensure_installed = {
 				"prettier",
-				"stylua",
 				"eslint_d",
 				"black",
 				"isort",
