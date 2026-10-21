@@ -94,12 +94,22 @@
     docker-compose
 
     unzip
+
+    glib
   ];
 
   fonts.packages = with pkgs; [
     nerd-fonts.jetbrains-mono
     noto-fonts-color-emoji
   ];
+
+  xdg.portal = {
+    enable = true;
+    extraPortals = with pkgs; [
+      xdg-desktop-portal-gtk
+      xdg-desktop-portal-wlr
+    ];
+  };
 
   nix.settings.experimental-features = [
     "nix-command"
