@@ -59,6 +59,7 @@ in
     imagemagick
     vscode
     github-cli
+    thunar
   ];
 
   xdg.configFile = builtins.mapAttrs (name: subpath: {
