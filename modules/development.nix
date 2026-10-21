@@ -32,7 +32,6 @@
     isort
     shfmt
     shellcheck
-    eslint_d
 
     #Languages
     nodejs
