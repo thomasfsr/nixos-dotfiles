@@ -60,6 +60,9 @@ in
     vscode
     github-cli
     thunar
+    grim
+    slurp
+    satty
   ];
 
   xdg.configFile = builtins.mapAttrs (name: subpath: {
