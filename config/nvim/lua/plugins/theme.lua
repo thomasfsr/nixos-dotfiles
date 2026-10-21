@@ -1,14 +1,14 @@
 return {
-	-- {
-	-- 	"folke/tokyonight.nvim",
-	-- 	lazy = false,
-	-- 	priority = 1000,
-	-- 	opts = {},
-	-- 	config = function()
-	-- 		--color styles: night, storm, moon and day
-	-- 		vim.cmd.colorscheme("tokyonight-night")
-	-- 	end,
-	-- },
+	{
+		"folke/tokyonight.nvim",
+		lazy = false,
+		priority = 1000,
+		opts = {},
+		config = function()
+			--color styles: night, storm, moon and day
+			vim.cmd.colorscheme("tokyonight-night")
+		end,
+	},
 	-- {
 	-- 	"catppuccin/nvim",
 	-- 	name = "catppuccin",
@@ -17,15 +17,14 @@ return {
 	-- 		vim.cmd.colorscheme("catppuccin-mocha")
 	-- 	end,
 	-- },
-
-	{ "Mofiqul/dracula.nvim",
-    lazy = false,
-    priority = 1000,
-    config = function()
-      require("dracula").setup()
-      vim.cmd.colorscheme("dracula")
-    end,
-},
+	-- 	{ "Mofiqul/dracula.nvim",
+	--     lazy = false,
+	--     priority = 1000,
+	--     config = function()
+	--       require("dracula").setup()
+	--       vim.cmd.colorscheme("dracula")
+	--     end,
+	-- },
 	-- {
 	-- 	"loctvl842/monokai-pro.nvim",
 	-- 	lazy = false,
