@@ -60,6 +60,7 @@ in
     vscode
     github-cli
     thunar
+    wayfreeze
     grim
     slurp
     satty
