@@ -70,7 +70,6 @@
     # Wayland / desktop
     waybar
     swaybg
-    swaylock
     swaylock-effects
     swayimg
     xrdb
