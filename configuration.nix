@@ -109,6 +109,7 @@
       xdg-desktop-portal-wlr
     ];
   };
+  programs.dconf.enable = true;
 
   nix.settings.experimental-features = [
     "nix-command"
