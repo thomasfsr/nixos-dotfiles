@@ -1,11 +1,16 @@
-{ config, lib, pkgs, ... }:
+{
+  config,
+  lib,
+  pkgs,
+  ...
+}:
 
 {
   imports = [
     ./hardware-configuration.nix
   ];
 
-  security.pam.services.swaylock = {};
+  security.pam.services.swaylock = { };
   nix.gc = {
     automatic = true;
     dates = "weekly";
@@ -32,7 +37,10 @@
   users.users.tfsr = {
     isNormalUser = true;
     shell = pkgs.zsh;
-    extraGroups = [ "wheel" "docker"];
+    extraGroups = [
+      "wheel"
+      "docker"
+    ];
     packages = with pkgs; [
       tree
     ];
@@ -90,6 +98,7 @@
 
   fonts.packages = with pkgs; [
     nerd-fonts.jetbrains-mono
+    noto-fonts-color-emoji
   ];
 
   nix.settings.experimental-features = [
