@@ -15,7 +15,7 @@ term = xterm-256color
 
 background-opacity = 0.95
 
-font-family = "JetBrainsMono Nerd Font"
+font-family = "Terminess Nerd Font Mono"
 
 font-size = 12
 font-feature = +feat +calt +liga +dlig
