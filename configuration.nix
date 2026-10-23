@@ -98,7 +98,7 @@
   ];
 
   fonts.packages = with pkgs; [
-    nerd-fonts.termiless-tff
+    nerd-fonts.termiless-ttf
     noto-fonts-color-emoji
   ];
 
