@@ -129,7 +129,7 @@
     ];
   };
   programs.dconf.enable = true;
-
+  services.fwupd.enable = true;
   nix.settings.experimental-features = [
     "nix-command"
     "flakes"
