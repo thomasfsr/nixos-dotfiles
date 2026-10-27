@@ -28,8 +28,9 @@ in
     shellAliases = {
       btw = "echo i use mango btw";
       nrs = "sudo nixos-rebuild switch --flake ~/nixos-dotfiles#mango-btw";
+      nup = "cd ~/nixos-dotfiles && nix flake update && sudo nixos-rebuild switch --flake .#mango-btw";
       vi = "nvim";
-      gac = "git add . && git commit -m 'ok' && git push";
+      gitok = "git add . && git commit -m 'ok' && git push";
     };
 
     sessionVariables = {
@@ -50,25 +51,54 @@ in
   programs.starship.enable = true;
 
   home.packages = with pkgs; [
+    # Development
     gcc
-    rofi
+    git
+    github-cli
     opencode
-    yazi
-    psmisc
     antigravity-ide
     antigravity-cli
-    onlyoffice-desktopeditors
+    vscode
+
+    # Terminal utilities
+    wget
+    unzip
+    psmisc
     htop
     imagemagick
-    vscode
-    github-cli
+    yazi
+
+    # Terminal emulators
+    foot
+    ghostty
+
+    # Desktop applications
+    onlyoffice-desktopeditors
     thunar
+    rofi
+
+    # Wayland
+    waybar
+    swaybg
+    swayimg
+    sway-audio-idle-inhibit
     wayfreeze
+
+    # Screenshots
     grim
     slurp
     satty
-  ];
 
+    # Clipboard
+    wl-clipboard
+    wl-clip-persist
+    cliphist
+
+    # Other utilities
+    brightnessctl
+    docker-compose
+    xrdb
+  ];
   xdg.configFile = builtins.mapAttrs (name: subpath: {
     source = symlink "${dotfiles}/${subpath}";
   }) configs;

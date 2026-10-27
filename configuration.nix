@@ -60,42 +60,8 @@
   programs.bash.enable = true;
 
   environment.systemPackages = with pkgs; [
-    brightnessctl
     vim
-    wget
-
-    # Terminais
-    foot
-    ghostty
-
-    # Wayland / desktop
-    waybar
-    swaybg
     swaylock-effects
-    swayimg
-    xrdb
-    xdg-desktop-portal-wlr
-
-    # Clipboard
-    wl-clip-persist
-    wl-clipboard
-    cliphist
-
-    # Áudio / idle
-    sway-audio-idle-inhibit
-
-    # Input method
-    fcitx5
-
-    # Git
-    git
-
-    # Docker
-    docker-compose
-
-    unzip
-
-    glib
   ];
 
   fonts = {
