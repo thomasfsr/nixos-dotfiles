@@ -31,6 +31,10 @@ in
       nup = "cd ~/nixos-dotfiles && nix flake update && sudo nixos-rebuild switch --flake .#mango-btw";
       vi = "nvim";
       gitok = "git add . && git commit -m 'ok' && git push";
+      alias ls= "eza --icons";
+      alias ll= "eza -lah --icons";
+      alias la= "eza -a --icons";
+      alias lt= "eza --tree --level=2 --icons";
     };
 
     sessionVariables = {
@@ -67,6 +71,7 @@ in
     htop
     imagemagick
     yazi
+    eza
 
     # Terminal emulators
     foot
