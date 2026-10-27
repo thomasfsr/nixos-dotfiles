@@ -101,7 +101,7 @@
     packages = with pkgs; [
       inter
       noto-fonts
-      noto-fonts-color-emoji
+      openmoji-color
       nerd-fonts.jetbrains-mono
       nerd-fonts.terminess-ttf
     ];
@@ -115,8 +115,8 @@
           "Noto Sans"
         ];
         serif = [ "Noto Serif" ];
-        monospace = [ "JetBrainsMono Nerd Font" ];
-        emoji = [ "Noto Color Emoji" ];
+        monospace = [ "Terminess Nerd Font" ];
+        emoji = [ "OpenMoji Color" ];
       };
     };
   };
