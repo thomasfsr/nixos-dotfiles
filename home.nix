@@ -72,6 +72,11 @@ in
     imagemagick
     yazi
     eza
+    jq
+    lazygit
+    yq-go
+    strace
+    lsof
 
     # Terminal emulators
     foot
@@ -88,6 +93,7 @@ in
     swayimg
     sway-audio-idle-inhibit
     wayfreeze
+    dunst
 
     # Screenshots
     grim
@@ -103,6 +109,13 @@ in
     brightnessctl
     docker-compose
     xrdb
+
+    # Audio / media
+    pavucontrol
+    playerctl
+
+    # Security
+    keepassxc
   ];
   xdg.configFile = builtins.mapAttrs (name: subpath: {
     source = symlink "${dotfiles}/${subpath}";
