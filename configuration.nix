@@ -40,6 +40,7 @@
     extraGroups = [
       "wheel"
       "docker"
+      "networkmanager"
     ];
     packages = with pkgs; [
       tree
