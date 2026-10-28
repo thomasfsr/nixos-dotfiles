@@ -22,14 +22,8 @@ in
   home.homeDirectory = "/home/tfsr";
   home.stateVersion = "26.05";
 
-  home.sessionVariables = {
-    ZVM_INSTALL = "$HOME/.zvm/self";
-  };
-
   home.sessionPath = [
     "$HOME/.zvm/bin"
-    "$HOME/.zvm/self"
-    "$HOME/.local/bin"
     "$HOME/.config/herd-lite/bin"
   ];
   programs.zsh = {

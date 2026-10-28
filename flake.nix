@@ -13,11 +13,6 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    zvm = {
-      url = "github:tristanisham/zvm";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
   outputs =
@@ -25,7 +20,6 @@
       nixpkgs,
       home-manager,
       mangowm,
-      zvm,
       ...
     }:
     {
@@ -38,10 +32,6 @@
           {
             home-manager = {
               useGlobalPkgs = true;
-
-              extraSpecialArgs = {
-                inherit zvm;
-              };
               useUserPackages = true;
               users.tfsr = import ./home.nix;
               backupFileExtension = "backup";
