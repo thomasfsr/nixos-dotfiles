@@ -7,6 +7,7 @@
 
 {
   home.packages = with pkgs; [
+    #Neovim toolkit
     ripgrep
     fd
     fzf
@@ -41,6 +42,16 @@
     cargo
     zvm
     python3
+
+    # Development
+    gcc
+    git
+    github-cli
+    opencode
+    antigravity-ide
+    antigravity-cli
+    vscode
+
   ];
 
   programs.neovim = {

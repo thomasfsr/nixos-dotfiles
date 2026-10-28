@@ -12,6 +12,7 @@ let
     ghostty = "ghostty";
     yazi = "yazi";
     swaylock = "swaylock";
+    rofi = "rofi";
   };
 in
 {
@@ -73,14 +74,6 @@ in
   };
 
   home.packages = with pkgs; [
-    # Development
-    gcc
-    git
-    github-cli
-    opencode
-    antigravity-ide
-    antigravity-cli
-    vscode
 
     # Terminal utilities
     wget
