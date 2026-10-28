@@ -52,7 +52,25 @@ in
   };
 
   programs.git.enable = true;
-  programs.starship.enable = true;
+
+  programs.starship = {
+    enable = true;
+
+    settings = {
+      bun.symbol = " ";
+      nodejs.symbol = " ";
+      python.symbol = " ";
+      golang.symbol = " ";
+      rust.symbol = " ";
+      zig.symbol = " ";
+      php.symbol = " ";
+      lua.symbol = " ";
+      nix_shell.symbol = " ";
+      git_branch.symbol = " ";
+      docker_context.symbol = " ";
+      package.symbol = "󰏗 ";
+    };
+  };
 
   home.packages = with pkgs; [
     # Development
