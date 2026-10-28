@@ -22,6 +22,16 @@ in
   home.homeDirectory = "/home/tfsr";
   home.stateVersion = "26.05";
 
+  home.sessionVariables = {
+    ZVM_INSTALL = "$HOME/.zvm/self";
+  };
+
+  home.sessionPath = [
+    "$HOME/.zvm/bin"
+    "$HOME/.zvm/self"
+    "$HOME/.local/bin"
+    "$HOME/.config/herd-lite/bin"
+  ];
   programs.zsh = {
     enable = true;
 
@@ -37,13 +47,12 @@ in
       lt = "eza --tree --level=2 --icons";
     };
 
-    sessionVariables = {
-      PATH = "$HOME/.config/herd-lite/bin:$PATH";
-    };
-
     initContent = ''
         # Se estiver usando o zsh-vi-mode, ajuste para o método recomendado:
         # source ${pkgs.zsh-vi-mode}/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+
+      eval "$(zvm env --shell zsh --use-on-cd)"
+
       if [[ -z "$WAYLAND_DISPLAY" && "$(tty)" == /dev/tty1 ]]; then
         exec mango
       fi
