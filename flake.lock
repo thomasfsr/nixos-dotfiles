@@ -115,7 +115,8 @@
       "inputs": {
         "home-manager": "home-manager",
         "mangowm": "mangowm",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "zvm": "zvm"
       }
     },
     "scenefx": {
@@ -153,6 +154,26 @@
       "original": {
         "owner": "nix-systems",
         "repo": "default-linux",
+        "type": "github"
+      }
+    },
+    "zvm": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1793103275,
+        "narHash": "sha256-rl6Z93Z7o39QH64No72gcHALW3nqrTWs3TIaPZM4gxg=",
+        "owner": "tristanisham",
+        "repo": "zvm",
+        "rev": "82f5ae5f5d13b435b2c051b462e41a7ee905ac18",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tristanisham",
+        "repo": "zvm",
         "type": "github"
       }
     }
