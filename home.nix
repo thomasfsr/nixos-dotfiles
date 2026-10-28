@@ -51,8 +51,6 @@ in
         # Se estiver usando o zsh-vi-mode, ajuste para o método recomendado:
         # source ${pkgs.zsh-vi-mode}/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 
-      eval "$(zvm env --shell zsh --use-on-cd)"
-
       if [[ -z "$WAYLAND_DISPLAY" && "$(tty)" == /dev/tty1 ]]; then
         exec mango
       fi
