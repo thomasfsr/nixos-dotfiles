@@ -18,7 +18,7 @@ window#waybar {
   background: #1a1a2a;
   color: #ffffff;
   border-radius: 0px;
-  border: 2px rgba(15, 15, 15, 0.5);
+  border: 2px solid #10101c;
 }
 
 window#waybar.hidden {
