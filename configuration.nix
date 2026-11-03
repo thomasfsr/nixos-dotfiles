@@ -8,7 +8,7 @@
     ./hardware-configuration.nix
   ];
 
-  security.pam.services.swaylock = { };
+  security.pam.services.waylock = { };
   nix.gc = {
     automatic = true;
     dates = "weekly";
@@ -59,7 +59,7 @@
 
   environment.systemPackages = with pkgs; [
     vim
-    swaylock-effects
+    waylock
   ];
 
   fonts = {

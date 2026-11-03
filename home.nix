@@ -11,7 +11,6 @@ let
     waybar = "waybar";
     ghostty = "ghostty";
     yazi = "yazi";
-    swaylock = "swaylock";
     rofi = "rofi";
   };
 in
