@@ -26,6 +26,7 @@ in
   home.sessionPath = [
     "$HOME/.zvm/bin"
     "$HOME/.config/herd-lite/bin"
+    "$HOME/.config/composer/vendor/bin"
   ];
   programs.zsh = {
     enable = true;
