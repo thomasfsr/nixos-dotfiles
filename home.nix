@@ -94,7 +94,7 @@ in
     ghostty
 
     # Desktop applications
-    onlyoffice-desktopeditors
+    libreoffice
     thunar
     rofi
 
