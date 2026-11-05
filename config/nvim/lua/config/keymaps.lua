@@ -29,3 +29,7 @@ vim.keymap.set("n", "<leader>fb", builtin.buffers, {
 vim.keymap.set("n", "<leader>fh", builtin.help_tags, {
 	desc = "Telescope help tags",
 })
+vim.keymap.set("n", "<leader>u", function()
+	vim.cmd.packadd("nvim.undotree")
+	require("undotree").open()
+end, { desc = "Toggle Builtin Undotree" })
