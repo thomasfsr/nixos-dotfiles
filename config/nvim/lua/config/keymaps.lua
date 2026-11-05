@@ -1,4 +1,6 @@
--- move the cursor to another window
+vim.keymap.set("x", "p", [["_dP]], { desc = "Paste over selection without losing yanked text" })
+vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]], { desc = "Delete without yanking" }) -- move the cursor to another window
+
 vim.keymap.set("n", "<c-x>", ":bd<CR>") -- close current buffer
 vim.keymap.set("n", "<c-i>", ":bnext<CR>")
 vim.keymap.set("n", "<c-k>", ":wincmd k<CR>")
