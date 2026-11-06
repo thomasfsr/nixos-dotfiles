@@ -26,6 +26,7 @@ in
     "$HOME/.zvm/bin"
     "$HOME/.config/herd-lite/bin"
     "$HOME/.config/composer/vendor/bin"
+    "$HOME/.local/bin"
   ];
   programs.zsh = {
     enable = true;
