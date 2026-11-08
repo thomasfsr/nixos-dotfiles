@@ -98,6 +98,7 @@ in
     libreoffice
     thunar
     rofi
+    obs-studio
 
     # Wayland
     waybar
