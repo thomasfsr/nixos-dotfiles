@@ -30,7 +30,18 @@ in
   ];
   programs.zsh = {
     enable = true;
+    autosuggestions.enable = true;
+    syntaxHighlighting.enable = true;
 
+    ohMyZsh = {
+      enable = true;
+      theme = "robbyrussell"; # Substitua pelo tema que preferir
+      plugins = [
+        "git"
+        "sudo"
+        "docker"
+      ];
+    };
     shellAliases = {
       btw = "echo i use mango btw";
       nrs = "sudo nixos-rebuild switch --flake ~/nixos-dotfiles#mango-btw";
