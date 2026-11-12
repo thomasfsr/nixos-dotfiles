@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
-pkill -RTMIN+9 -x '.waybar-wrapped'
