@@ -1,14 +1,22 @@
 return {
+	-- {
+	-- 	"folke/tokyonight.nvim",
+	-- 	lazy = false,
+	-- 	priority = 1000,
+	-- 	opts = {},
+	-- config = function()
+	--color styles: night, storm, moon and day
+	-- vim.cmd.colorscheme("tokyonight-night")
+	-- end,
+	-- },
 	{
-		"folke/tokyonight.nvim",
-		lazy = false,
-		priority = 1000,
-		opts = {},
+		"projekt0n/github-nvim-theme",
+		name = "github-theme",
 		config = function()
-			--color styles: night, storm, moon and day
-			vim.cmd.colorscheme("tokyonight-night")
+			vim.cmd.colorscheme("github_dark_default")
 		end,
 	},
+	-- {
 	-- {
 	-- 	"catppuccin/nvim",
 	-- 	name = "catppuccin",
