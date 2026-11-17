@@ -1,21 +1,21 @@
 return {
-	-- {
-	-- 	"folke/tokyonight.nvim",
-	-- 	lazy = false,
-	-- 	priority = 1000,
-	-- 	opts = {},
-	-- config = function()
-	--color styles: night, storm, moon and day
-	-- vim.cmd.colorscheme("tokyonight-night")
-	-- end,
-	-- },
 	{
-		"projekt0n/github-nvim-theme",
-		name = "github-theme",
+		"folke/tokyonight.nvim",
+		lazy = false,
+		priority = 1000,
+		opts = {},
 		config = function()
-			vim.cmd.colorscheme("github_dark_default")
+			-- color styles: night, storm, moon and day
+			vim.cmd.colorscheme("tokyonight-night")
 		end,
 	},
+	-- {
+	-- 	"projekt0n/github-nvim-theme",
+	-- 	name = "github-theme",
+	-- 	config = function()
+	-- 		vim.cmd.colorscheme("github_dark_default")
+	-- 	end,
+	-- },
 	-- {
 	-- {
 	-- 	"catppuccin/nvim",
