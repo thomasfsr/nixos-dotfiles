@@ -52,6 +52,8 @@
         "spacing": 10
     },
     "clock": {
+        "on-click": "dunstify -h string:x-dunst-stack-tag:date \"$(date +'%d %m %y')\"",
+        "tooltip": false
     },
     "custom/system": {
         "exec": "bash ~/.config/waybar/scripts/system.sh",
