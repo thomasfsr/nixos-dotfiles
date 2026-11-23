@@ -53,7 +53,8 @@
     },
     "clock": {
         "format": "{:%H:%M}",
-        "tooltip-format": "{:%A, %d de %B de %Y}"
+        "tooltip": true,
+        "tooltip-format": "TESTE {:%d/%m/%Y}"
     },
     "custom/system": {
         "exec": "bash ~/.config/waybar/scripts/system.sh",
