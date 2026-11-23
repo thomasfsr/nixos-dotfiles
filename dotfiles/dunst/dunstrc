@@ -1,0 +1,35 @@
+[global]
+    origin = bottom-center
+    offset = (0, 24)
+    width = (100, 300)
+    height = (0, 150)
+
+    font = JetBrainsMono Nerd Font 11
+    alignment = center
+    vertical_alignment = center
+
+    padding = 8
+    horizontal_padding = 14
+    frame_width = 1
+    frame_color = "#10101c"
+    separator_color = frame
+    corner_radius = 0
+
+    format = "<b>%s</b>\n%b"
+    timeout = 3
+
+[urgency_low]
+    background = "#1a1a2a"
+    foreground = "#aaaaaa"
+    frame_color = "#10101c"
+
+[urgency_normal]
+    background = "#1a1a2a"
+    foreground = "#ffffff"
+    frame_color = "#10101c"
+
+[urgency_critical]
+    background = "#1a1a2a"
+    foreground = "#ffffff"
+    frame_color = "#ff0000"
+    timeout = 0

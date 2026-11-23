@@ -12,6 +12,7 @@ let
     ghostty = "ghostty";
     yazi = "yazi";
     rofi = "rofi";
+    dunst = "dunst";
   };
 in
 {
