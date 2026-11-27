@@ -15,18 +15,14 @@
 
 window#waybar {
   min-height: 14px;
-  background: #1a1a2a;
+  background: #0a0a1a;
   color: #ffffff;
   border-radius: 0px;
-  border: 1px solid #10101c;
+  border: 1px solid #00000c;
 }
 
 window#waybar.hidden {
   opacity: 0.3;
-}
-
-#custom-date {
-  color: #ffffff;
 }
 
 #clock {

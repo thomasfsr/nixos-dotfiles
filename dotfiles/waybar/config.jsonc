@@ -12,8 +12,6 @@
       "ext/workspaces"
     ],
     "modules-center": [
-      "custom/date",
-      "custom/sep",
       "clock"
     ],
 
@@ -53,7 +51,6 @@
     },
     "clock": {
         "format": "{:%H:%M}",
-        "tooltip": true,
         "tooltip-format": "TESTE {:%d/%m/%Y}"
     },
     "custom/system": {
@@ -92,13 +89,6 @@
     },
     "custom/arch": {
         "format": "  ",
-        "on-click": "rofi -show drun",
-        "tooltip": false
-    },
-
-    "custom/date": {
-        "exec": "bash ~/.config/waybar/scripts/date_pt.sh",
-        "interval": 60,
-        "tooltip": false
+        "on-click": "rofi -show drun"
     }
 }
