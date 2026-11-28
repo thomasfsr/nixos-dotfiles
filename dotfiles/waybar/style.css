@@ -3,6 +3,14 @@
   font-size: 14;
 }
 
+tooltip {
+  background: #0a0a1a;
+}
+
+tooltip label {
+  color: white;
+}
+
 #workspaces button {
   padding: 0 6px;
   color: #aaaaaa;
