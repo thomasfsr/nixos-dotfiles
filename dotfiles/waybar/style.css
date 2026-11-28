@@ -15,6 +15,8 @@ tooltip label {
 #workspaces button {
   padding: 0 6px;
   color: #aaaaaa;
+  border: 0px;
+  border-radius: 0px;
 }
 
 #workspaces button.active {
@@ -23,8 +25,9 @@ tooltip label {
 }
 
 #workspaces button:hover {
-  background: #313244;
-  color: #ffffff;
+  box-shadow: inherit;
+  text-shadow: inherit;
+  background: inherit;
 }
 
 window#waybar {
