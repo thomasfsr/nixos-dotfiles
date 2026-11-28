@@ -22,6 +22,11 @@ tooltip label {
   color: #ffffff;
 }
 
+#workspaces button:hover {
+  background: #313244;
+  color: #ffffff;
+}
+
 window#waybar {
   min-height: 14px;
   background: #0a0a1a;
