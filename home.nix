@@ -102,6 +102,7 @@ in
     thunar
     rofi
     obs-studio
+    freecad
 
     # Wayland
     waybar
