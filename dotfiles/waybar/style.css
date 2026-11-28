@@ -1,10 +1,11 @@
 * {
   font-family: "JetBrainsMono Nerd Font";
-  font-size: 14;
+  font-size: 14px;
 }
 
 tooltip {
   background: #0a0a1a;
+  border: 1px solid #00000c;
 }
 
 tooltip label {

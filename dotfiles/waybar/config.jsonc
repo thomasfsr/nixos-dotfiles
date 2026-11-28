@@ -20,15 +20,10 @@
     },
     "modules-right": [
         "custom/brightness",
-        "custom/sep",
         "battery",
-        "custom/sep",
         "custom/system",
-        "custom/sep",
         "custom/volume",
-        "custom/sep",
-        "network",
-        "custom/sep"
+        "network"
     ],
     // Modules configuration
     "ext/workspaces": {
@@ -50,7 +45,7 @@
     },
     "clock": {
         "format": "{:%H:%M}",
-        "tooltip-format": "TESTE {:%d/%m/%Y}"
+        "tooltip-format": "{:%d/%m/%Y}"
     },
     "custom/system": {
         "exec": "bash ~/.config/waybar/scripts/system.sh",
@@ -71,10 +66,6 @@
         "format": "󰖩 ",
         "format-disconnected": "󰖪 ",
         "on-click": "foot --title 'nmtui-popup' --window-size-chars 100x30 sh -c 'sleep 0.3 && nmtui'"
-    },
-    "custom/sep": {
-        "format" : " ",
-        "interval" : 0
     },
     "custom/brightness": {
         "exec": "brightnessctl -m | cut -d, -f4 | tr -d '%'",
