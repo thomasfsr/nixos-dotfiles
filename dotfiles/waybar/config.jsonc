@@ -7,7 +7,7 @@
 
     // Choose the order of the modules
     "modules-left": [
-      "custom/arch",
+      "custom/launcher",
       "ext/workspaces"
     ],
     "modules-center": [
@@ -85,7 +85,7 @@
         "signal": 9,
         "format": "{}"
     },
-    "custom/arch": {
+    "custom/launcher": {
         "format": "  ",
         "on-click": "rofi -show drun"
     }
