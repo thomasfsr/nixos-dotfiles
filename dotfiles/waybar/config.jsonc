@@ -43,10 +43,18 @@
     "tray": {
         "spacing": 10
     },
+
     "clock": {
-        "format": "{:%H:%M}",
-        "tooltip-format": "{:%d/%m/%Y}"
+        "format": "󰥔 {:%a, %d. %b %H:%M}",
+        "tooltip-format": "<tt><big>{calendar}</big></tt>",
+        "calendar": {
+          "format": {
+            "today": "<span background='#75f1fa'><b>{}</b></span>"
+          }
     },
+    "on-click": "exec google-chrome-stable --app=https://calendar.google.com"
+    },
+
     "custom/system": {
         "exec": "bash ~/.config/waybar/scripts/system.sh",
         "interval": 1,
